@@ -1,4 +1,4 @@
-import 'package:assignment_three/assignment_three.dart';
+import 'package:assignment_3/assignment_3.dart';
 import 'package:test/test.dart';
 
 void main() {
