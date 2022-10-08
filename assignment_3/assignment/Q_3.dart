@@ -1,14 +1,14 @@
-// Write a function getMin that takes array as parameter and returns the min
-// value in the array
+//Write a function count2 that takes array as parameter and counts occurrences of number 2
 import 'dart:io';
-
-// function to get the min value
-int getmin (List numbers){
-  int min = numbers[0];
+// function to count occurrences of number 2
+int count2 (List numbers){
+  int count = 0;
   for (int i =0 ; i <numbers.length ; i++) {
-    if (min > numbers[i]) {min=numbers[i];}
+    if (numbers[i] == 2 ) {
+      count++;
+    }
   }
-  return min;
+  return count;
 }
 
 void main() {
@@ -20,6 +20,6 @@ void main() {
     stdout.write("Please Enter the Number : ");
     numbers[i]=int.parse(stdin.readLineSync());
   }
-  int min = getmin(numbers);
-  print("The Min value = $min");
+  int count = count2(numbers);
+  print("The Sum of Even Numbers You Entered = $count");
 }
