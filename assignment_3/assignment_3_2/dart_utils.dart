@@ -1,11 +1,14 @@
 import "dart:io";
 
+// function to print the array
 void print_array (List<int> arr){
   for (int i=0 ; i<arr.length ; i++)
   {
     print('$i -> ${arr[i]}');
   }
 }
+
+// function to read the array
 List read_arry_from_console (List<int> arr)
 {
   stdout.write('Please Enetr the Legnth 4of the Array : ');

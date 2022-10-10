@@ -23,4 +23,4 @@ void main()
   List<int> arr = [];
   read_arry_from_console(arr);
   CountGeneral(arr);
-}
+}x
