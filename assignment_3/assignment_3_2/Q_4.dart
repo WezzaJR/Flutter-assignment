@@ -1,4 +1,4 @@
-//Modify the above function to be CountGeneral that takes array as
+// Modify the above function to be CountGeneral that takes array as
 // parameter and count occurrences of every number in the array and print it
 
 import 'dart:io';

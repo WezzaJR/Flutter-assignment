@@ -10,7 +10,7 @@ void print_array (List arr){
 // function to read the array
 List read_arry_from_console (List arr)
 {
-  stdout.write('Please Enetr the Legnth 4of the Array : ');
+  stdout.write('Please Enetr the Legnth of the Array : ');
   int size = int.parse(stdin.readLineSync());
   for (int i =0 ;  i <size ; i++){
     stdout.write('Enter the Element Number ${i+1} : ');
