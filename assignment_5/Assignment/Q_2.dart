@@ -14,6 +14,12 @@
 // class variables to these values.
 // b) Write a method inSameMonth, which compares two instances of the class Holiday, and
 // returns the Boolean value true if they have the same month, and false if they do not.
+// c) Write a method avgDate which takes an array of base type Holiday as its argument, and
+// returns a double that is the average of the day variables in the Holiday instances in the
+// array. You may assume that the array is full (i.e. does not have any null entries).
+// d) Write a piece of code that creates a Holiday instance with the name “Independence Day”,
+// with the day “4”, and with the month “July”.
+
 
 
 class Holiday {
@@ -27,16 +33,18 @@ class Holiday {
   static bool inSameMonth (Holiday first , Holiday second){
     return(first.month == second.month);
   }
+
+  static double avgDate(List arr) {
+    int sum = 0;
+    for (int i =0 ;  i<arr.length ; i++){
+      sum += arr[i].day;
+    }
+    double avg = sum / arr.length ;
+    return avg;
+  }
+
 }
 
 void main () {
-  Holiday H1 = Holiday("John", 12, "jun");
-  Holiday H2 = Holiday("John", 12, "jun");
-
-  if (Holiday.inSameMonth(H1, H2)) {
-    print ("the same month");
-  }
-  else {
-    print("not the same");
-  }
+  Holiday H = Holiday("Independence Day", 4 , "July")
 }
